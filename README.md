@@ -12,7 +12,7 @@ gem install chef-handler-fluentd
 
 Set up handler:
 
-```
+```ruby
 # solo.rb / client.rb
 require 'chef/handler/fluentd'
 handler = Chef::Handler::Fluentd.new('chef', host: 'localhost', port: 24224)
