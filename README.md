@@ -1,24 +1,24 @@
 # Chef::Handler::Fluentd
 
-TODO: Write a gem description
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'chef-handler-fluentd'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install chef-handler-fluentd
+Handler for Chef to send logs to Fluentd
 
 ## Usage
 
-TODO: Write usage instructions here
+Install:
+
+```
+gem install chef-handler-fluentd
+```
+
+Set up handler:
+
+```
+# solo.rb / client.rb
+require 'chef/handler/fluentd'
+handler = Chef::Handler::Fluentd.new('chef', host: 'localhost', port: 24224)
+exception_handlers << handler
+report_handlers << handler
+```
 
 ## Contributing
 
