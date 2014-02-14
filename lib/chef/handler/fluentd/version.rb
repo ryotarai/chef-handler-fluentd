@@ -1,6 +1,6 @@
 module Chef
   module Handler
-    module Fluentd
+    class Fluentd
       VERSION = "0.0.1"
     end
   end
