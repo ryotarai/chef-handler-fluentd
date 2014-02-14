@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ryota Arai"]
   spec.email         = ["ryota.arai@gmail.com"]
   spec.summary       = %q{Handler for Chef to send logs to Fluentd}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/ryotarai/chef-handler-fluentd"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
